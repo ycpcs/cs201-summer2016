@@ -135,10 +135,9 @@ th, td {
 	padding: 4px;
 }
 
-/*td, th {
-	border: 1px solid black;
-	padding: 4px;
-}*/
+tr:nth-child(even) {
+	background: #e6e6ea;
+}
 
 pre {
 	margin-left: 20px;
