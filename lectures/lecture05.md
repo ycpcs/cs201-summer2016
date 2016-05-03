@@ -35,7 +35,7 @@ The exception hierarchy
 
 Java has a hierarchy of exception classes:
 
-> ![image](figures/exceptHier.png)
+> <img style="width: 36em;" alt="Java exception hierarchy" src="figures/exceptHier.png">
 
 The boxes are the exception classes. The arrows represent *Is-A* relationships. For example, an **ArithmeticException** is a **RuntimeException**. That means that aritmetic exceptions are "kind of" runtime exception.
 

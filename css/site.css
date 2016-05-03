@@ -132,7 +132,7 @@ th {
 }
 
 th, td {
-	padding: 4px;
+	padding: 4px 8px;
 }
 
 tr:nth-child(even) {
@@ -142,10 +142,10 @@ tr:nth-child(even) {
 pre {
 	margin-left: 20px;
 	margin-right: 20px;
-	background: #eee;
 	padding: 8px;
 	border: 1px solid #bbb;
 	overflow: auto; /* scroll if doesn't fit within page */
+	background: #e6e6ea;
 }
 
 dt {

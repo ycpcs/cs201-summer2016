@@ -92,7 +92,7 @@ Java supports many familiar numeric data types and operators that are present in
 > char|char
 > float|float
 > double|double
->
+
 Pretty easy to remember, huh?
 
 Here's a simple program which does a computation on two integer values:
