@@ -1,0 +1,3 @@
+baseurl: "http://ycpcs.github.io/cs201-summer2016"
+markdown: kramdown
+coursename: "CS 201"
