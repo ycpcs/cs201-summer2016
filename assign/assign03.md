@@ -1,0 +1,122 @@
+---
+layout: default
+title: "Assignment 3: Disks game (Part II)"
+---
+
+**Due: Friday, June 3rd by 11:59 PM**
+
+CS 201 - Assignment 3
+=====================
+
+Your Task
+---------
+
+Your task is to complete your implementation of the Disk Placement game described in the [previous assignment](assign2.html). You should implement all of the features described.
+
+You will use the **Disk** class you implemented in the previous assignment as an important building block in the completed game.
+
+Getting Started
+---------------
+
+Start by making a copy of your **CS201\_Assign02** project (which you completed in the previous assignment.)
+
+To make a copy of a project in Eclipse:
+
+-   Right-click on the name of the project in the Package Explorer
+-   Choose **Copy**
+-   From the **Edit** menu, choose the **Paste** menu item
+
+When you choose **Paste**, you will see a dialog box similar to the following one:
+
+> ![image](img/copyProject1.png)
+
+Change the project name to **CS201\_Assign03**:
+
+> ![image](img/copyProject2.png)
+
+Click **OK**.
+
+Specifications and Hints
+------------------------
+
+You will make all of your code changes to the **DisksPanel** class, which implements the game play.
+
+You should add whatever fields are necessary to represent the state of the game. You will probably want to use an array of **Disk** elements to represent the disks that have been placed.
+
+### Mouse events
+
+The **handleMouseMove** method is called whenever the mouse pointer is moved within the window. You can get the x and y coordinates as follows:
+
+{% highlight java %}
+int x = e.getX();
+int y = e.getY();
+{% endhighlight %}
+
+where **e** is the parameter to the method, an instance of the **MouseEvent** class. You will need state variables to keep track of the current location of the mouse pointer.
+
+The **handleMouseClick** method is called whenever a mouse button is clicked. You should use this method to place a disk in the window. You will need to check to ensure that the placed disk
+
+1.  does not overlap any previously placed disk, and
+2.  is placed entirely within the bounds of the panel
+
+The **WIDTH** and **HEIGHT** constants provide the width and height of the panel.
+
+Remember that you will need to call **repaint** to force the contents of the panel to be redrawn when the game state changes.
+
+### Disk creation
+
+When the next disk is ready to be placed, its radius should be randomly chosen in the range 10..44, inclusive. You can generate random numbers using an instance of the **java.util.Random** class as a field:
+
+{% highlight java %}
+private Random rand;
+{% endhighlight %}
+
+Create an instance in your constructor:
+
+{% highlight java %}
+rand = new Random();
+{% endhighlight %}
+
+You can generate a random number uniformly chosen from the range 0..n-1, inclusive, using the method call
+
+{% highlight java %}
+rand.nextInt(n)
+{% endhighlight %}
+
+### The paint method
+
+The **paint** method should use the fields representing the game state to render the current configuration.
+
+Some **java.awt.Graphics** methods that will be useful:
+
+-   **setColor** - Sets the drawing color.
+-   **drawOval** - Draws an outlined oval. If the width and height are the same, draws an outlined circle.
+-   **fillOval** - Draws a filled oval. If the width and height are the same, draws a filled circle.
+-   **setFont** - Sets the current font used for drawing text.
+-   **drawString** - Draws a string of text characters.
+
+Running the program
+-------------------
+
+To run the program, right-click on **DisksApp.java** and choose **Run as&rarr;Java Application**.
+
+Grading
+-------
+
+The grading will be done as follows:
+
+-   Displaying the outline of the next disk to be placed - 15%
+-   Allowing disks to be placed, drawing them - 30%
+-   Detecting overlap and out-of-bounds - 20%
+-   Keeping score, displaying score - 15%
+-   Detecting end of game, displaying "Game over" - 20%
+-   Growing the disks array as needed, rather than preallocating a large array - 5%
+
+Submitting
+----------
+
+Export your finished program to a zip file (right-click on the project, then **Export...&rarr;Archive File**). Upload the zip file to the marmoset server as project **assign3**. The server URL is
+
+> <https://cs.ycp.edu/marmoset>
+
+**IMPORTANT**: after uploading, you should download a copy of your submission and double-check it to make sure that it contains the correct files. **You are responsible for making sure your submission is correct**. You may receive a grade of 0 for an incorrectly submitted assignment.

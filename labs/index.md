@@ -13,7 +13,7 @@ In order to receive credit for completing a lab, you need to get a sign-off from
 4. For 50% of full credit: Submit the completed lab to Marmoset before the first exam to occur after the class in which the lab is due.
 
 <div class="callout">
-<b>Protip</b>: Work on the lab <i>before</i> coming to class.  This will allow you to ask good questions when we work on the lab in class, and will give you a much better chance of finishing the lab in class.
+<b>Protip</b>: Work on the labs <i>before</i> coming to class.  This will allow you to ask good questions when we work on the lab in class, and will give you a much better chance of finishing the lab in class.
 </div>
 
 > Date | Lab(s) | File(s)
