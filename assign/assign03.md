@@ -1,9 +1,11 @@
 ---
 layout: default
-title: "Assignment 3: Disk Placement Game"
+title: "Assignment 3: Disks Game"
 ---
 
 **Due**: Friday, June 3rd by 11:59 PM
+
+Acknowledgment: The idea for this assignment comes from [Tom Ellman](http://pages.vassar.edu/tomellman/) at Vassar College.
 
 CS 201 - Assignment 3
 =====================
@@ -28,11 +30,11 @@ To make a copy of a project in Eclipse:
 
 When you choose **Paste**, you will see a dialog box similar to the following one:
 
-> ![image](img/copyProject1.png)
+> ![image](img/assign03/copyProject1.png)
 
 Change the project name to **CS201\_Assign03**:
 
-> ![image](img/copyProject2.png)
+> ![image](img/assign03/copyProject2.png)
 
 Click **OK**.
 
@@ -41,7 +43,7 @@ Disk Placement Game
 
 In this assignment you will implement the "Disk Placement" game. Here is a screenshot of what the completed game will look like:
 
-> ![image](img/assign2-screenshot.png)
+> ![image](img/assign03/screenshot.png)
 
 The goal is to place disks of random sizes and colors onto the game board so that
 
@@ -52,7 +54,7 @@ The solid disks are the ones that have been successfully placed. The black disk 
 
 The game ends when a disk is placed in a position where it overlaps another disk, or is not entirely placed within the game board:
 
-> ![image](img/assign2-gameover.png)
+> ![image](img/assign03/gameover.png)
 
 You can download my implementation of the game to see how it works:
 
