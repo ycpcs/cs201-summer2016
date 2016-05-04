@@ -7,8 +7,8 @@ This schedule is subject to change.  Any change will be announced in class and o
 
 Please do the reading <i>before</i> you come to class.
 
-Date | Topic, Readings
----- | ---------------
+Date | Topics, Readings
+---- | ----------------
 May 17 | [Lecture 1: Introduction, Primitive Java](lectures/lecture01.html), 1.1&ndash;1.6
 May 19 | [Lecture 2: Objects/References, Constructors, JUnit](lectures/lecture02.html), 2.1&ndash;2.3, 3.1&ndash;3.9<br>[Lecture 3: Arrays](lectures/lecture03.html), 2.4
 May 24 | [Lecture 4: File I/O, Exceptions](lectures/lecture04.html), 2.5&ndash;2.6<br>[Lecture 5: Exceptions](lectures/lecture05.html), 2.5
