@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Assignment 3: Disks game (Part II)"
+title: "Assignment 3: Disk Placement Game"
 ---
 
-**Due: Friday, June 3rd by 11:59 PM**
+**Due**: Friday, June 3rd by 11:59 PM
 
 CS 201 - Assignment 3
 =====================
@@ -11,7 +11,7 @@ CS 201 - Assignment 3
 Your Task
 ---------
 
-Your task is to complete your implementation of the Disk Placement game described in the [previous assignment](assign2.html). You should implement all of the features described.
+Your task is to complete your implementation of the Disk Placement game described below.
 
 You will use the **Disk** class you implemented in the previous assignment as an important building block in the completed game.
 
@@ -35,6 +35,32 @@ Change the project name to **CS201\_Assign03**:
 > ![image](img/copyProject2.png)
 
 Click **OK**.
+
+Disk Placement Game
+-------------------
+
+In this assignment you will implement the "Disk Placement" game. Here is a screenshot of what the completed game will look like:
+
+> ![image](img/assign2-screenshot.png)
+
+The goal is to place disks of random sizes and colors onto the game board so that
+
+1.  no disk overlaps any other disk, and
+2.  every disk lies entirely within the rectangular game board
+
+The solid disks are the ones that have been successfully placed. The black disk outline follows the mouse and shows where the next disk could be placed. The number in the lower right-hand corner shows the number of disks that have been successfully placed.
+
+The game ends when a disk is placed in a position where it overlaps another disk, or is not entirely placed within the game board:
+
+> ![image](img/assign2-gameover.png)
+
+You can download my implementation of the game to see how it works:
+
+> [disks.jar](disks.jar)
+
+On Windows systems, just double-click on the file. On Linux and MacOS, open a terminal window, change directory into the directory in which you saved the file, and run the command
+
+    java -jar disks.jar
 
 Specifications and Hints
 ------------------------
