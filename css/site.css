@@ -5,7 +5,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	max-width: 48em;
+	max-width: 52em;
 	margin: 0 auto;
 }
 
@@ -88,6 +88,7 @@ a.cc-img {
 
 html {
 	min-height: 100%;
+	font-family: 'Source Serif Pro', serif;
 }
 
 html, body {
@@ -138,6 +139,10 @@ th, td {
 
 tr:nth-child(even) {
 	background: #e6e6ea;
+}
+
+pre, code, tt {
+	font-family: 'Source Code Pro', monospace;
 }
 
 pre {
