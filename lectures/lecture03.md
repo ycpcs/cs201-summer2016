@@ -3,7 +3,7 @@ layout: default
 title: "Arrays"
 ---
 
-Note: The [course notes on arrays](../notes/javaArrays.html) will be useful.
+Note: see the [course notes on arrays](../notes/javaArrays.html) for more detailed information about arrays in Java.
 
 Java Arrays
 ===========
