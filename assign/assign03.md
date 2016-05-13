@@ -58,11 +58,11 @@ The game ends when a disk is placed in a position where it overlaps another disk
 
 You can download my implementation of the game to see how it works:
 
-> [disks.jar](disks.jar)
+> [disks-obfuscated.jar](disks-obfuscated.jar)
 
 On Windows systems, just double-click on the file. On Linux and MacOS, open a terminal window, change directory into the directory in which you saved the file, and run the command
 
-    java -jar disks.jar
+    java -jar disks-obfuscated.jar
 
 Specifications and Hints
 ------------------------
