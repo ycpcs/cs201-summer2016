@@ -1,4 +1,4 @@
-baseurl: "http://ycpcs.github.io/cs201-summer2016"
+baseurl: "//ycpcs.github.io/cs201-summer2016"
 markdown: kramdown
 highlighter: rouge
 coursename: "CS 201"
