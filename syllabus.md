@@ -102,7 +102,7 @@ Assignments and labs will be submitted using the server <https://cs.ycp.edu/marm
 
 The following academic integrity policy pertains to all individual assignments:
 
-> Because the individual assignments are essential for working towards and demonstrating the achievement of the course outcomes, and outcomes 1&ndash;3 in particular, you must complete them on your own.  Collaboration is not permitted.  Discussion of algorithms or approaches, sharing of code via any means, incorporating code written by others (including code taken from the internet), viewing another student's code, allowing another student to view your code, and group programming or debugging are considered violations of academic integrity.
+> Because the individual assignments are essential for working towards and demonstrating the achievement of the course outcomes, and outcomes 1&ndash;3 in particular, you must solve them on your own.  You may discuss the problem and high-level (pseudo-code) approaches to solving the problem with other students.  You may *not*, under any circumstances, discuss or share concrete implementation techniques or code.  Examples of forbidden types of collaboration include, but are not limited to: looking at another student's code, allowing another student to see your code, viewing and/or using code from an external source such as a web page, discussing the use of specific API functions to solve a problem, giving or receiving help debugging specific code.
 
 Quizzes and exams must be completed individually.
 
