@@ -7,4 +7,4 @@ This page has links to code examples presented in class.
 
 Date | File | Description
 ---- | ---- | -----------
-May 19 | <Point.zip> | **Point** class, JUnit tests, reference semantics examples
+May 19 | [Point.zip](Point.zip) | **Point** class, JUnit tests, reference semantics examples
