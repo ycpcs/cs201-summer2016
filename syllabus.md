@@ -9,9 +9,9 @@ title: "Syllabus"
 
 **Summer 2016**
 
-Instructor | Email | Office hours
----------- | ----- | ------------
-[David Hovemeyer](http://faculty.ycp.edu/~dhovemey) | [dhovemey@ycp.edu](mailto:dhovemey@ycp.edu) | By arrangement (email me)
+Instructor | Email | Office hours (KEC 113)
+---------- | ----- | ----------------------
+[David Hovemeyer](http://faculty.ycp.edu/~dhovemey) | [dhovemey@ycp.edu](mailto:dhovemey@ycp.edu) | Tuesday 1&ndash;3, Friday 11&ndash;1, or by arrangement (email me)
 
 Course Description
 ------------------

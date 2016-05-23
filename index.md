@@ -25,4 +25,5 @@ Welcome to the website for CS 201, Fundamentals of Computer Science II, at York 
 
 ## News
 
+* **May 23** &mdash; Scheduled office hours (in KEC 113) are Tuesday 1&ndash;3 and Friday 11&ndash;1.  Please feel free to contact me if you would like to meet with me outside these times.
 * **May 17** &mdash; Welcome!
