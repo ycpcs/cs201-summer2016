@@ -22,13 +22,13 @@ Your Task
 
 Your task is to complete the implementation of the **Disk** class. (In the next assignment, you will use your **Disk** class to implement a game that will use this class.)
 
-An instance of the **Disk** class represents one of the disks placed on the game board. Each **Disk** object should store **x** and **y** coordinates, a **radius**, and a color (represented as member of the **DiskColor** enumeration). You should add fields to the class for each of these 4 properties.
+An instance of the **Disk** class represents one of the disks placed on the game board. Each **Disk** object should store the **x** and **y** coordinates of the disk's center, a **radius**, and a color (represented as member of the **DiskColor** enumeration). You should add fields to the class for each of these 4 properties.
 
 You must implement 7 methods:
 
 -   A constructor which initializes the fields of a newly-created **Disk** object using values specified by parameter values
--   A **getX** method which returns the **Disk** object's x coordinate value
--   A **getY** method which returns the **Disk** object's y coordinate value
+-   A **getX** method which returns the **Disk** object's center x coordinate value
+-   A **getY** method which returns the **Disk** object's center y coordinate value
 -   A **getRadius** which returns the **Disk** object's radius value
 -   A **getColor** method which returns the **Disk** object's color
 -   An **overlaps** method which determines whether or not the **Disk** object overlaps another **Disk** object passed as a parameter
