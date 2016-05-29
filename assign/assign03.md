@@ -143,7 +143,7 @@ The grading will be done as follows:
 Submitting
 ----------
 
-Export your finished program to a zip file (right-click on the project, then **Export...&rarr;Archive File**). Upload the zip file to the marmoset server as project **assign3**. The server URL is
+Export your finished program to a zip file (right-click on the project, then **Export...&rarr;Archive File**). Upload the zip file to the marmoset server as project **assign03**. The server URL is
 
 > <https://cs.ycp.edu/marmoset>
 
