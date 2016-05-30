@@ -151,7 +151,7 @@ Note that because the **Disk** class uses **double** values to represent coordin
 g.fillOval((int) x, (int) y, (int) w, (int) h);
 {% endhighlight %}
 
-Also note that the x/y coordinates of a disk represent its center, but the x/y coordinates in a call to **fillOval** are the upper left corner of a rectangle surrounding the oval being drawn.  You will need to adjust the disk's accordingly when drawing a disk.
+Also note that the x/y coordinates of a disk represent its center, but the x/y coordinates in a call to **fillOval** are the upper left corner of a rectangle surrounding the oval being drawn.  You will need to adjust the disk's coordinates accordingly when drawing a disk.
 
 Running the program
 -------------------
