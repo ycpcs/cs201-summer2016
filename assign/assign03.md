@@ -145,6 +145,12 @@ Some **java.awt.Graphics** methods that will be useful:
 
 The **paint** method should draw a circle (using the appropriate color) for each disk.  If you used the approach suggested above, the **disks** array will contain references to all of the placed **Disk** objects, and the **diskCount** field will record how many there are.
 
+Note that because the **Disk** class uses **double** values to represent coordinates and dimensions, but the methods of **java.awt.Graphics** require **int** values, you will need to use type casts to convert from **double** values to **int** values.  For example, let's say that **x**, **y**, **w**, and **h** are the coordinates and width/height of a circle you want to draw.  The call to **fillOval** would be
+
+{% highlight java %}
+g.fillOval((int) x, (int) y, (int) w, (int) h);
+{% endhighlight %}
+
 Running the program
 -------------------
 
