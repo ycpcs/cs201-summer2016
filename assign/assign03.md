@@ -170,6 +170,8 @@ The grading will be done as follows:
 -   Detecting end of game, displaying "Game over" - 20%
 -   Growing the disks array as needed, rather than preallocating a large array - 5%
 
+Also note that points may be deducted for poor coding style.
+
 Submitting
 ----------
 
