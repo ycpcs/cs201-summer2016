@@ -7,6 +7,8 @@ title: "Assignment 3: Disks Game"
 
 Acknowledgment: The idea for this assignment comes from [Tom Ellman](http://pages.vassar.edu/tomellman/) at Vassar College.
 
+*Update* 5/30: Added hints about representing and rendering the placed disks: see the *Disk placement* and *The paint method* sections below.
+
 CS 201 - Assignment 3
 =====================
 
@@ -111,6 +113,24 @@ You can generate a random number uniformly chosen from the range 0..n-1, inclusi
 rand.nextInt(n)
 {% endhighlight %}
 
+### Disk placement
+
+The game will need to keep track of each disk that has been placed successfully.  One approach is to use an array.  For example, add the following fields to the **DisksPanel** class:
+
+{% highlight java %}
+private Disk[] disks;
+private int diskCount;
+{% endhighlight %}
+
+In the constructor:
+
+{% highlight java %}
+disks = new Disk[500];
+diskCount = 0;
+{% endhighlight %}
+
+When a disk is placed successfully, a reference to the new **Disk** object should be added to the array.  The **diskCount** field can be used to keep track of how many disks have been placed.
+
 ### The paint method
 
 The **paint** method should use the fields representing the game state to render the current configuration.
@@ -122,6 +142,8 @@ Some **java.awt.Graphics** methods that will be useful:
 -   **fillOval** - Draws a filled oval. If the width and height are the same, draws a filled circle.
 -   **setFont** - Sets the current font used for drawing text.
 -   **drawString** - Draws a string of text characters.
+
+The **paint** method should draw a circle (using the appropriate color) for each disk.  If you used the approach suggested above, the **disks** array will contain references to all of the placed **Disk** objects, and the **diskCount** field will record how many there are.
 
 Running the program
 -------------------
