@@ -1,0 +1,19 @@
+GUIs
+
+Event-driven
+  Event happens: user input, timer, etc.
+  Program *handles* the event
+
+Architecture:
+  Model - the *data* (representation of problem domain)
+  View - (1) render the model, (2) handle user input
+  Controller - logic (updates to model)
+
+Problem domain: model and controller
+UI: view
+
+UI can use problem domain classes
+
+Problem domain classes *must not* use UI classes
+
+
