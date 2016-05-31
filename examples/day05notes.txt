@@ -1,0 +1,81 @@
+Reminders:
+  Exam 1 on Thursday - practice exam available
+    Format: written questions, programming
+    Covers material through today
+  Assignment 3 due on Friday
+
+Inheritance and polymorphism
+
+Is-A relationships between classes
+  Car IS-A Vehicle
+  Boat IS-A Vehicle
+
+Superclass, subclass (supertype, subtype)
+
+How to use inheritance correctly
+  Superclass: defines *common operations* (methods)
+    E.g., move method for Vehicle
+  Subclasses: implement common operations with varying
+    behavior
+
+Liskov substitution principle
+  Anywhere in a program where a superclass is used,
+    an instance of a subclass may be substituted
+
+Polymorphism, dynamic dispatch
+  Consider this code:
+
+     public void f(Vehicle v) {
+       v.move();
+     }
+
+Abstract methods and classes
+  Common operations in a superclass are usually abstract
+  A class with at least one abstract method is abstract
+    Can't be instantiated!
+
+Concrete implementation details in superclasses
+  Fields and concrete methods
+  Will be inherited by all subclasses
+  Use this sparingly!!!
+
+ArrayList
+  most programs will use collections of objects
+  could use arrays
+    disadvantage: arrays have a fixed size
+    run out of room? allocate a larger array,
+       copy data, use new array
+  ArrayList -
+    works like an array
+    grows as needed!
+
+  // E.g., for assignment 3
+
+  // field to store placed Disk objects
+  private ArrayList<Disk> disks;
+
+  // in constructor
+  this.disks = new ArrayList<Disk>();
+
+
+  // when you want to add a disk
+  Disk d = new Disk(...);
+
+  disks.add(d); // append to ArrayList of Disk objects
+
+
+  // drawing in paint method
+  for (int i = 0; i < disk.size(); i++) {
+    Disk d = disk.get(i);
+
+    // draw the disk
+    ...
+  }
+
+
+
+
+
+
+
+
