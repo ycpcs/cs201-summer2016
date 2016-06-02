@@ -3,11 +3,13 @@ layout: default
 title: "Assignment 3: Disks Game"
 ---
 
-**Due**: Friday, June 3rd by 11:59 PM
+**Due**: Wednesday, June 8th by 11:59 PM
 
 Acknowledgment: The idea for this assignment comes from [Tom Ellman](http://pages.vassar.edu/tomellman/) at Vassar College.
 
 *Update* 5/30: Added hints about representing and rendering the placed disks: see the *Disk placement* and *The paint method* sections below.
+
+*Update* 6/2: Due date extended.
 
 CS 201 - Assignment 3
 =====================
