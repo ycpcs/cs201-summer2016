@@ -1,0 +1,56 @@
+Reminders:
+  Assign 4 MS 1 due *this Thursday* (June 16th)
+  Assign 4 MS 2 due Thursday, June 30th
+    Extra credit option!
+
+Analysis of algorithms
+  How long will the program take to run...
+     ...on an input of a specific size
+
+  Better way of phrasing:
+    How does the running time of the program
+    change as the problem size increases?
+
+   time
+    ^
+    |                    + (quadratic? increase)
+    |                   +
+    |                  +
+    |                +
+    |              +
+    |           +                 * (linear increase)
+    |       +           *
+    |         *
+    |*+
+    +-----------------------------> problem size
+
+  Could also analyze memory use
+
+Remove
+
+   Example array list
+
+elements:   A  B  C  D  E
+indices:    0  1  2  3  4
+
+What happens if the element at index 1 is removed?
+
+elements:   A  C  D  E
+indices:    0  1  2  3
+
+
+Analysis of calling remove
+
+	public E remove(int index) {
+		E value = get(index);   // work_rest
+		for (int i = index + 1; i < size(); i++) { // niters
+		    set(i - 1, get(i));   // work_loop
+		}
+		numElements--;   // work_rest
+		return value;    // work_rest
+	}
+
+Total cost of calling remove is
+
+   niters*work_loop + work_rest
+
