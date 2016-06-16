@@ -25,6 +25,7 @@ Welcome to the website for CS 201, Fundamentals of Computer Science II, at York 
 
 ## News
 
+* **Jun 16** &mdash; The due dates for milestones 1 and 2 of [Assignment 4](assign/assign04.html) are extended to Tuesday, June 21st and Tuesday, July 12th, respectively.
 * **Jun 9** &mdash; The due dates for milestones 1 and 2 of [Assignment 4](assign/assign04.html) are extended to Thursday, June 16th and Thursday, June 30th, respectively.
 * **Jun 7** &mdash; Office hours on Friday, June 10th are canceled.  I will be traveling over the weekend, but you can reach me by email.
 * **Jun 2** &mdash; Office hours tomorrow (Friday, June 3rd) are rescheduled to Monday, June 6th from 11-1.  Also, the due date for [Assignment 3](assign/assign03.html) is extended until Wednesday, June 8th.
