@@ -1,0 +1,106 @@
+Announcements:
+  Assignment 4 due dates extended (again):
+    MS 1 due Tuesday, June 21st
+    MS 2 due Tuesday, July 12th
+    This will definitely be the last extension!
+
+    This means that I won't send a grade for
+    MS 1 until next week: however, the JUnit
+    tests for MS 1 are very comprehensive, so if
+    they pass you can (and should) start working
+    on MS 2
+
+    Don't forget extra credit option for MS 2
+    (GUI)
+
+Big-O
+
+  Notation for stating an asymptotic upper bound
+  on the running time (or memory use) of an
+  algorithm
+
+  Big-O: characterizes performance as input becomes
+  large
+
+  Idea: count *steps*
+     Step = something that takes constant time
+
+     Consequence: 1 step + 1 step = 1 step
+
+    // Example: sequential search
+    // Input size: N = array.length
+	public static<E> int findElement(E[] array, E element) {
+		// how many iterations (worst case)? N
+		for (int i = 0; i < array.length; i++) {
+			// body of loop is constant time (1 step)
+		    if (array[i].equals(element)) {
+		        return i;
+		    }
+		}
+		return -1; // one step
+	}
+
+    Total number of steps: t(N) = N * 1 + 1
+
+    Finding big-O upper bound:
+        1. drop low-order terms
+        2. drop constant factors
+
+    For sequential search:
+        f(N) = N
+
+    So, we say sequential search is O(N)
+
+	Example: detecting duplicates in an array
+
+	// Input size: N = array.length
+	public static<E> boolean containsDuplicates(E[] array) {
+		for (int i = 0; i < array.length; i++) {
+		    E element = array[i]; // 1 step  (A)
+
+			// how many iterations? varies! "dependent" inner loop
+			// when i=0 N-1, when i=1 N-2, when i=2 N-3, etc...
+			// N-1, N-2, N-3, ..., 0
+		    for (int j = i + 1; j < array.length; j++) {
+				// body of loop: 1 step
+		        E other = array[j];
+		        if (element.equals(other)) {
+		            return true;
+		        }
+		    }
+		}
+		return false; // 1 step  (B)
+	}
+
+    For dependent inner loop, goal is to count # iters of inner loop's
+    body
+        ...for ALL iterations of outer loop
+
+    State a *series* that describes total number of iters of inner loop body
+
+         (N-1) + (N-2) + (N-3) + ... + 2 + 1 + 0
+
+         sum pairs of terms (largest/smallest, second largest/second smallest,
+         etc.) - all will be equal (in this case, N-1)
+
+         now we just need to know how many pairs: numterms/2
+         (in this case N/2)
+
+         closed form sum: (N-1) * (N/2)
+
+    t(N) = N*1 + 1    + ((N-1)*(N/2))*1
+           (A)   (B)     everything else
+
+         = N + 1   + N^2/2 - N/2
+
+         = N^2/2 + N/2 + 1
+
+    In big-O terms:
+
+        f(N) = N^2
+
+    So, the containsDuplicates method is O(N^2)
+
+
+
+
