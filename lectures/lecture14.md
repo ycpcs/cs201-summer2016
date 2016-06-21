@@ -36,7 +36,7 @@ Here is a class hierarchy diagram showing the **Collection&lt;E&gt;**, **List&lt
 
 > ![image](figures/lecture14-collections.png)
 
-We have already seen and used the **ArrayList&lt;E&gt;** class. We will investigate each of other classes (**LinkedList&lt;E&gt;**, **HashSet&lt;E&gt;**, and **TreeSet&lt;E&gt;** in the coming weeks.
+We have already seen and used the **ArrayList&lt;E&gt;** class. We will investigate each of other classes (**LinkedList&lt;E&gt;**, **HashSet&lt;E&gt;**, and **TreeSet&lt;E&gt;**) in the coming weeks.
 
 Maps
 ====
