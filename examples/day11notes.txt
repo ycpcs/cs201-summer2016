@@ -1,0 +1,23 @@
+Assignment 4 milestone 1 due today
+
+  Milestone 2 due Tuesday, July 12th
+    Start early!
+
+Exam 2: Thursday, June 30th
+  practice exam is on course web page
+
+No office hours this Friday 6/24
+
+---
+
+
+Using collections:
+  Whereever possible, use collections *interfaces*, not
+  *classes*
+
+     - use classes when creating objects (instances of
+       concrete collection types, e.g., ArrayList)
+
+     - all other uses (parameter types, field types,
+       variable types) use an interface (e.g., List)
+
