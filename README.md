@@ -15,7 +15,7 @@ are open source, and may be used, modified, and redistributed
 under the terms of the <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">CC-BY-SA 3.0</a>
 license.
 
-This website is a git repository hosted on Github: <https://github.com/ycpcs/cs101-summer2016>
+This website is a git repository hosted on Github: <https://github.com/ycpcs/cs201-summer2016>
 
 Please feel to use anything here that you find useful,
 and let us know if you have any comments or suggestions!
