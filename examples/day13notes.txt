@@ -1,0 +1,57 @@
+Exam 2 Thursday (6/30)
+  Prof. Hake will be proctoring
+  Same format as Exam 1: written+programming,
+    open book, closed notes
+
+No class next week
+
+Assignment 4 MS 2 due Tues, July 12th
+
+---
+
+Analyzing dependent inner loop:
+
+    // Approach 1: use a series
+
+    // N=arr.length
+    public static int mystery2(int[] arr) {
+      int sum = 0;
+      for (int j = 0; j < arr.length; j++) {
+        for (int i = 0; i < j; i++) { // 0, 1, 2, ..., N-2, N-1
+          sum += arr[j] * arr[i]; // O(1)
+        }
+      }
+      return sum;
+    }
+
+    Number of times inner loop is executed:
+      0+1+2+...+(N-2)+(N-1)
+     =(N-1)*(N/2)
+       ^     ^
+       |     +--- number of pairs of terms (0+(N-1)), (1+(N-2)), etc.
+       +--------- value of each pair
+
+      this sum is O(N^2)
+
+    So, overall, O(N^2) * O(1) is O(N^2)
+
+    // Approach 2: use an avg. number of iterations
+
+    // N=arr.length
+    public static int mystery2(int[] arr) {
+      int sum = 0;
+      for (int j = 0; j < arr.length; j++) {  // N times
+        for (int i = 0; i < j; i++) {  // 0, 1, ..., N-1, so (N-1)/2 times avg.
+          sum += arr[j] * arr[i]; O(1)
+        }
+      }
+      return sum;
+    }
+
+    So, overall, N*(N-1)/2*O(1) is O(N^2)
+
+ArrayList vs. LinkedList
+
+    ArrayList: random access
+    LinkedList: sequential access
+
