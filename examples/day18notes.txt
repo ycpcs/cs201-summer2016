@@ -1,0 +1,80 @@
+Assignment 5 - due tomorrow (Friday, 7/22)
+
+---
+
+Recursion
+
+  Alternative to iteration
+
+  Idea: method calls itself!
+
+  Why?
+    Some algorithms and data structures are naturally
+    recursive: e.g., merge sort, quick sort
+
+  Basic idea:
+    Base case: small instance(s) of problem which can be
+    solved without recursion, need 1 or more of these
+
+    Recursive case:
+      - find one or more smaller instance of same type
+        of problem within the problem to be solved
+        ("subproblems")
+      - solve the subproblem(s) recursively!
+      - *extend* the solution to the subproblem(s) so
+        that it/they become a solution to the overall problem
+
+  Example: computing sum of integers from 1 to n
+
+      General form: 1 + 2 + 3 + 4 + ... + (n-1) + n
+
+      Subproblem:   1 + 2 + 3 + 4 + ... + (n-1)
+
+      Extending soln to subproblem: subprobSoln + n
+
+      // Assume n >= 0
+      int sumInts(int n) {
+         // Check base case(s)
+         if (n == 0) {
+           return 0;
+         }
+
+         // Identify subproblem(s)
+         int subprob = n-1;
+
+         // Solve subproblem(s)
+         int subprobSoln = sumInts(subprob);
+
+         // Extend solution to subproblem(s)
+         int soln = subprobSoln + n;
+
+         // Return result
+         return soln;
+      }
+
+  How it works:
+
+    sumInts(4)
+      = sumInts(3) + 4
+      = sumInts(2) + 3 + 4
+      = sumInts(1) + 2 + 3 + 4
+      = sumInts(0) + 1 + 2 + 3 + 4
+      = 0 + 1 + 2 + 3 + 4
+
+  Using recursion effectively/correctly:
+
+    1. Check base case(s) ***FIRST***
+
+    2. Make subproblem(s) as ***LARGE*** as possible.
+
+    3. Recursive calls must ***make progress*** towards a base case.
+       (I.e., must be smaller than overall problem, and must eventually
+       result in a base case being reached.)
+
+    4. Do ***NOT*** think about how/why the recursion works.
+       Assume that magic happens and it works.
+
+  Advice:
+
+    Try the Codingbat recursion problems!
+

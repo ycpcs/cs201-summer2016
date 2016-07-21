@@ -18,3 +18,4 @@ June 16 | [day10notes.txt](day10notes.txt) | Text notes presented in class
 June 21 | [Iterators.zip](Iterators.zip) | Use Iterator to traverse Collections
 June 21 | [day11notes.txt](day11notes.txt) | Text notes presented in class
 June 28 | [day13notes.txt](day13notes.txt) | Text notes presented in class
+July 21 | [day18notes.txt](day18notes.txt) | Text notes presented in class
