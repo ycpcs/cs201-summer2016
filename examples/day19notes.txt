@@ -1,0 +1,66 @@
+Assignment 6 - due Friday August 5th
+
+Exam 3 - Tuesday August 9th
+
+Final Exam - Thursday August 11th
+
+---
+
+Proof by induction
+
+  Induction hypothesis: a claim that we claim is true for all
+  integers k and greater
+
+    Denote general induction hypothesis IH(n)
+
+       E.g., for n=0, IH(0)
+
+    Example: 
+
+      IH(n): for all n >= 0,  f(n) = sum {i=1..n} i = n(n+1) / 2
+
+  Proof by induction:
+
+     1. Basis step: prove that IH(k) is true (for some small k.)
+
+     2. Induction step: prove that if IH(n) is true, IH(n+1) must
+        also be true.
+
+       0  1  2  3  4  5  6  7  8  9 10 11 
+       +--+--+--+--+--+--+--+--+--+--+--+--->
+       *  *  *  *  *  *  *  *  *  *  *  * ...etc...
+
+  Example proof:
+
+    1. Basis step: IH(0) is f(0) = sum {i=1..0} i = 0(0+1) / 2 = 0   ✓ verified
+
+    2. Induction step:
+
+       Expectation: IH(n+1) is f(n+1) = sum {i=1..n+1} i = (n+1)(n+2) / 2
+
+       Connect cases n and n+1:
+          EXTREMELY IMPORTANT: we must make a claim that can be
+          established independent of this proof.  I.e., it must be
+          true based on the structure of the object that is the
+          subject of the proof.  STATE AN ARGUMENT ABOUT WHY THIS
+          CONNECTION ALWAYS HOLDS.
+
+          f(n+1) =  f(n) + (n+1)
+
+                 f(n) = 1 + 2 + 3 + ... + (n-1) + n
+
+               f(n+1) = 1 + 2 + 3 + ... + (n-1) + n + (n+1)
+                        \-------- f(n) -----------/
+
+               f(n+1) =           f(n)              + (n+1)
+
+       See if IH(n) implies IH(n+1):
+          Start by assuming that IH(n) is true!
+
+          f(n+1) =  f(n) + (n+1)
+                 = n(n+1) / 2  + (n+1)    -- assume IH(n) is true
+                 = (n^2 + n) / 2 + 2(n+1)/2
+                 = (n^2 + n + 2n + 2) / 2
+                 = (n^2 + 3n +2) / 2
+                 = (n+1)(n+2) / 2         -- matches expectation ✓ verified
+
