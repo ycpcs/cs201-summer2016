@@ -20,4 +20,6 @@ June 21 | [day11notes.txt](day11notes.txt) | Text notes presented in class
 June 28 | [day13notes.txt](day13notes.txt) | Text notes presented in class
 July 21 | [day18notes.txt](day18notes.txt) | Text notes presented in class
 July 26 | [day19notes.txt](day19notes.txt) | Text notes presented in class
+July 28 | [Change.zip](Change.zip) | Find optimal change using dynamic programming
+July 28 | [day20notes.txt](day20notes.txt) | Text notes presented in class
 

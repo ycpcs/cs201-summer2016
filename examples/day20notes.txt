@@ -1,0 +1,16 @@
+Assignment 6 due Friday Aug 5th
+
+Exam 3 Tuesday Aug 9th
+
+Final exam Thursday Aug 11th
+
+---
+
+We have seen *correctness* requirements for recursion
+  - must check base case(s) first
+  - recursive calls must make progress towards base case
+
+*Performance* requirement for recursion
+  Overall computation must not repeat subproblems
+
+
