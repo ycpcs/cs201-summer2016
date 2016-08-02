@@ -134,6 +134,38 @@ To avoid visiting the same page multiple times, the web crawler should use a map
 Hints
 =====
 
+## Approach
+
+Start by implementing the methods in the **URI** class and getting all of the tests to pass.
+
+Next, write code to scan through a text document and extract all referenced URIs from it.
+
+Next, start working on the main loop of the program, which should look something like this:
+
+{% highlight java %}
+Queue<String> q = new LinkedList<String>(); // queue of canonical URIs
+
+q.add(startingWebPageURI);
+
+while (!q.isEmpty()) {
+    String uri = q.remove();
+
+    if (/* uri hasn't been visited yet */) {
+        Link<String> links = extractLinks(directory, uri);
+
+        for (String refURI : links) {
+            // convert the referenced URI to canonical form
+
+            // see if its file exists:
+            // if not, it's a broken link, if so, add
+            // the canonical form of the URI to the queue
+        }
+    }
+}
+{% endhighlight %}
+
+## makeCanonical
+
 In the **makeCanonical** method of the **URITest** class, you will need to extract each component of the URI in order. For example, the components of the URI "foo/bar/baz.html" are "foo", "bar", and "baz.html".
 
 You can do so with the following code
@@ -164,9 +196,17 @@ since the ".." component means "go back to parent directory", the canonical form
 
 > foo/x.html
 
-A stack of URI component strings will help you find the canonical form of the URI you are processing.
+A stack of URI component strings will help you find the canonical form of the URI you are processing.  The idea is that each normal (not "." or "..") component of the input URI will be pushed on the stack.  The "." component can be ignored, and the ".." component indicates that the most recent component should be discarded.  At the end of processing the components, you should find that the stack contains the exact sequence of components that should be part of the canonical URI.
 
 Note that when converting a URI into its canonical form, any leading and/or trailing occurrences of the slash ("/") character must be preserved.
+
+## Things to watch out for
+
+Make sure that you use the **equals** method to compare strings.
+
+The queue used to keep track of web pages to be visited should store canonical URIs, *not* filenames.  The website directory is not part of any URI.
+
+Make sure each broken link report indicates the canonical URI of the page containing the broken link as well as the URI of the nonexistent document.
 
 Grading
 =======
