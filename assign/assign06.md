@@ -3,7 +3,7 @@ layout: default
 title: "Assignment 6: Web Crawler"
 ---
 
-**Due**: Friday, August 5th by 11:59 PM
+**Due**: Monday, August 8th by 11:59 PM
 
 Getting Started
 ===============
