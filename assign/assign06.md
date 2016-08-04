@@ -151,7 +151,7 @@ while (!q.isEmpty()) {
     String uri = q.remove();
 
     if (/* uri hasn't been visited yet */) {
-        Link<String> links = extractLinks(directory, uri);
+        List<String> links = extractLinks(directory, uri);
 
         for (String refURI : links) {
             // convert the referenced URI to canonical form
